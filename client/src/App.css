@@ -1,0 +1,23 @@
+@import '~antd/dist/antd.css';
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.842);
+}
+.content > div {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.content > div .content_left {
+  flex: 4;
+  background-color: silver;
+}
+.content > div .content_right {
+  flex: 8;
+}

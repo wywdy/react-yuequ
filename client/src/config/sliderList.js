@@ -3,51 +3,61 @@ export const sliderList=[
     {
         id:1,
         name:"工作台",
-        path:""
+        path:"/",
+        icon:'icon-weimingmingwenjianjia_gongzuotai'
     },
     {
         id:2,
         name:"文档",
-        path:""
+        path:"/dashboard/doc",
+        icon:'icon-wendang'
     },
     {
         id:3,
         name:"知识库",
-        path:""
+        path:"/dashboard/books",
+        icon:'icon-zhishikuguanli'
     },
     {
         id:4,
         name:"团队",
-        path:""
+        path:"/dashboard/groups",
+        icon:'icon-tuandui'
     },
     {
         id:5,
         name:"协作",
-        path:""
+        path:"/dashboard/collaborations",
+        icon:'icon-xiezuoxing'
     },
     {
         id:6,
         name:"讨论",
-        path:""
+        path:"/dashboard/topics",
+        icon:'icon-taolun'
     },
     {
         id:7,
         name:"关注",
-        path:""
+        path:"/dashboard/history",
+        icon:'icon-gz'
     },
     {
         id:8,
         name:"收藏",
-        path:""
+        path:"/dashboard/history",
+        icon:'icon-shoucang'
     },
     {
         id:9,
         name:"最近浏览",
-        path:""
+        path:"/dashboard/history",
+        icon:'icon-zuijinyuedu'
     },
     {
         id:10,
         name:"回收站",
-        path:""
+        path:"/dashboard/history",
+        icon:'icon-huishou'
     },
 ]

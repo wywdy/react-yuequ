@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom'
 import { Menu } from 'antd';
-import './left_nav.less';
 import {sliderList} from './../../config/sliderList'
-const { SubMenu } = Menu;
-export default class LeftNav extends Component {
+//import { withRoute } from 'react-router-dom'
+import './left_nav.less';
+const { Item } = Menu;
+class LeftNav extends Component {
+   
+    handleClick=(path)=>{
+        console.log(path)
+        this.props.history.push(path)
+    }
     render() {
         return (
             <Menu className="silder">
                 {
                     sliderList.map((item,index)=>{
-                        return  <SubMenu key={item.id} title={ <span>{item.name}</span> }></SubMenu>
+                        return(
+                                <Item className="silder_item" key={item.id} onClick={()=>{this.handleClick(item.path)}}>
+                                    <span className={'iconfont ' + item.icon}></span>
+                                    <span>{item.name}</span>
+                                </Item>
+                        ) 
                     })
                 }
-              
             </Menu>
         )
     }
 }
+export default withRouter(LeftNav)
