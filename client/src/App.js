@@ -1,11 +1,14 @@
 import React from 'react';
-import { Button } from 'antd';
 import './App.less';
+import Header from './components/Header'
+import LeftNav from './components/LeftNav'
+
 
 function App() {
   return (
     <div className="App">
-      <Button type="primary">Button</Button>
+        {/* <Header></Header> */}
+      <LeftNav />
     </div>
   );
 }
