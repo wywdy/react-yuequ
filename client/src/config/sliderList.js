@@ -45,7 +45,7 @@ export const sliderList=[
     {
         id:8,
         name:"收藏",
-        path:"/dashboard/history",
+        path:"/dashboard/sz",
         icon:'icon-shoucang'
     },
     {
@@ -57,7 +57,7 @@ export const sliderList=[
     {
         id:10,
         name:"回收站",
-        path:"/dashboard/history",
+        path:"/dashboard/hs",
         icon:'icon-huishou'
     },
 ]

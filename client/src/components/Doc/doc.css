@@ -1,0 +1,24 @@
+.doc_header {
+  display: flex;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+.doc_header > div {
+  flex: 5;
+}
+.doc_header .query {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doc_header .query Input {
+  width: 60px;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.747);
+}
+.doc_header .query Button {
+  margin-left: 10px;
+}

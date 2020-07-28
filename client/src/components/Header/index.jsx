@@ -1,14 +1,15 @@
 import React, { Component,createRef } from 'react'
 import './header.less'
 import { Row, Col , Input, Popconfirm} from 'antd';
-import { AudioOutlined } from '@ant-design/icons';
+import { SearchOutlined } from '@ant-design/icons';
 import logo from './../../assets/images/logo.png'
 import add from './../../assets/images/add.svg'
 import xx from './../../assets/images/xx.svg'
+import zj from './../../assets/images/zj.svg'
 import ava from './../../assets/images/ava.png'
 
 const prefix = (
-    <AudioOutlined
+    <SearchOutlined 
       style={{
         fontSize: 16
       }}
@@ -76,16 +77,15 @@ export default class Header extends Component {
                     </Col>
                     <Col span={4} className="header_right">
                        <div ref={this.update}>
-                       <Popconfirm
-                        placement="bottomRight"
-                    >
-                        <img src={add}></img>
-                    </Popconfirm>
-                   
+                        <Popconfirm
+                            placement="bottomRight"
+                        >
+                            <img src={add}></img>
+                        </Popconfirm>   
                         </div>
-                       <div><img src={xx}></img></div>
-                       <div><img src={xx}></img></div>
-                       <div><img src={ava} style={{borderRadius:'50%'}}></img></div>
+                        <div><img src={zj}></img></div>
+                        <div><img src={xx}></img></div>
+                        <div><img src={ava} style={{borderRadius:'50%'}}></img></div>
                     </Col>      
                 </Row>
                
